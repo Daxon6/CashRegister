@@ -1,6 +1,5 @@
 # Cash Register
 
-Short description
 This project is a small Windows Forms point‑of‑sale (POS) application written in C# for .NET Framework 4.7.2. It manages product categories and items, builds receipts, stores receipts in a database, and updates sold quantities. 
 
 Features
