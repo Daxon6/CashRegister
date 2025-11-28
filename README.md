@@ -19,3 +19,13 @@ Build & run
 2. Ensure the project targets __.NET Framework 4.7.2__ (Project Properties).
 3. Configure your database connection in the `Database` class or in `app.config`.
 4. Build and run (F5).
+
+
+Database — minimal schema
+
+The code expects at least these tables/columns:
+
+- `kategorije` (idKategorije PK, naziv)
+- `artikli` (idArtikla PK, naziv, idKategorije FK, cena INT, mera VARCHAR, prodato INT)
+- `racuni` (idRacuna PK, ukupanIznos INT, datumKreiranja DATE)
+- `racun_artikal` (idRacunArtikal PK, idRacuna FK, idArtikla FK, kolicina INT)
